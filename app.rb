@@ -6,6 +6,6 @@ get '/' do
 end
 
 post '/mac/on' do
-  system 'wakeonlan 10:9a:dd:60:b2:cc'
+  system 'wakeonlan -i 192.168.9.1 10:9a:dd:60:b2:cc'
 end
 
