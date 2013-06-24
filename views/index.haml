@@ -1,0 +1,28 @@
+!!!
+%html
+  %head
+    %meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    %link(rel='stylesheet' href='css/bootstrap.min.css')
+    %link(rel='stylesheet' href='css/bootstrap-responsive.min.css')
+    %script{:src => 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'}
+    %script{:src => 'js/bootstrap.min.js'}
+    %script{:src => 'js/main.js'}
+    %title Windy
+  %body
+    .container-fluid
+      %h1 Windy
+      %body
+        %section
+          %h2 PC control
+          %section
+            %h3 Mac mini
+            %p
+              %button.windy-button.btn.btn-large.btn-primary(windy-target="/mac/on") on
+              %button.windy-button.btn.btn-large(windy-target="/mac/off") off
+        %section
+          %h2 Light control
+          %section
+            %h3 Ceiling light
+            %p
+              %button.windy-button.btn.btn-large.btn-primary(windy-target="/on") on
+              %button.windy-button.btn.btn-large(windy-target="/off") off
